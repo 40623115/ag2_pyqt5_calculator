@@ -25,15 +25,17 @@ class Dialog(QDialog, Ui_Dialog):
         self.setupUi(self)
         '''以下為使用者自行編寫程式碼區'''
         
+        self.display.setText('0')
+        self.wait = True
         self.clearAllButton.clicked.connect(self.clearAll)
-        
+        self.clearButton.clicked.connect(self.clear)
+
         number=[self.zero, self.one, self.two, self.three, self.four, self.five, self.six, \
             self.seven, self.eight, self.nine]
         for i in number:
             i.clicked.connect(self.digitClicked)
-        self.display.setText('0')
-        self.wait = True
             
+        
     def digitClicked(self):
         '''
         使用者按下數字鍵, 必須能夠累積顯示該數字
@@ -76,8 +78,10 @@ class Dialog(QDialog, Ui_Dialog):
         
     def clear(self):
         '''清除鍵按下後的處理方法'''
-        pass
-        
+        #pass
+        self.display.clear()
+        self.wait = True
+        self.display.setText('0')
     def clearAll(self):
         '''全部清除鍵按下後的處理方法'''
        #pass
