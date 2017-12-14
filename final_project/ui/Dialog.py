@@ -28,7 +28,7 @@ class Dialog(QDialog, Ui_Dialog):
         self.clearAllButton.clicked.connect(self.clearAll)
         
         number=[self.one, self.two, self.three, self.four, self.five, self.six, \
-            self.seven, self.eight, self.nine, self.zero]
+            self.seven, self.eight, self.nine]
         for i in number:
             i.clicked.connect(self.digitClicked)
             
