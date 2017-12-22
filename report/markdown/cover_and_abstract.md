@@ -5,11 +5,11 @@ category_zh: '計算機程式 ag2 期末報告'
 title_zh: 'PyQt5 事件導向計算器'
 title_en: 'PyQt5 Event-Driven Calculator Project'
 author:
-- 設計一甲 40623 XXX
-- 設計一甲 40623 XXX
-- 設計一甲 40623 XXX
-- 設計一甲 40623 XXX
-- 設計一甲 40623 XXX
+- 設計一甲 40623104  曾昱瑄
+- 設計一甲 40623105  陳維云
+- 設計一甲 40623113  吳承哲
+- 設計一甲 40623114  吳信億
+- 設計一甲 40623115  吳隆廷
 
 advisor_zh: '嚴家銘'
 date: '2017.12.21'
