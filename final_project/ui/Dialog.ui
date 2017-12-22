@@ -23,7 +23,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>計算機 - 第二組</string>
   </property>
   <property name="sizeGripEnabled">
    <bool>true</bool>
@@ -510,7 +510,7 @@
     </widget>
    </item>
    <item row="5" column="2">
-    <widget class="QPushButton" name="pushButton_22">
+    <widget class="QPushButton" name="pointButton">
      <property name="minimumSize">
       <size>
        <width>50</width>
@@ -534,7 +534,7 @@
     </widget>
    </item>
    <item row="5" column="3">
-    <widget class="QPushButton" name="pushButton_20">
+    <widget class="QPushButton" name="changeSignButton">
      <property name="minimumSize">
       <size>
        <width>50</width>
@@ -612,6 +612,9 @@
        <pointsize>20</pointsize>
       </font>
      </property>
+     <property name="text">
+      <string>0</string>
+     </property>
      <property name="alignment">
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
@@ -637,7 +640,7 @@
       </font>
      </property>
      <property name="text">
-      <string>Backspace</string>
+      <string>&lt;- Backspace</string>
      </property>
     </widget>
    </item>
