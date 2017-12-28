@@ -205,11 +205,16 @@ class Dialog(QDialog, Ui_Dialog):
     
     def clearMemory(self):
         '''清除記憶體鍵按下後的處理方法'''
-        pass
+    
+        self.sumInMemory = 0.0
+
+       # pass
     
     def readMemory(self):
         '''讀取記憶體鍵按下後的處理方法'''
-        pass
+        self.display.setText(str(self.sumInMemory))
+        self.waitingForOperand = True
+        #pass
     
     def setMemory(self):
         '''設定記憶體鍵按下後的處理方法'''
