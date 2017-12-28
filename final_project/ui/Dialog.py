@@ -59,7 +59,7 @@ class Dialog(QDialog, Ui_Dialog):
         
         '''
         button = self.sender()
-        #避免重複 0。
+       
         if self.display.text() == '0' and int(button.text())== 0.0:
             return
         #清除螢幕 (運算的時候)
