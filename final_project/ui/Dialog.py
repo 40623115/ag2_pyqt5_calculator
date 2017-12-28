@@ -47,6 +47,10 @@ class Dialog(QDialog, Ui_Dialog):
         unaryOperator = [self.squareRootButton, self.powerButton,  self.reciprocalButton ]
         for i in unaryOperator:
             i.clicked.connect(self.unaryOperatorClicked)
+        # 設定記憶
+        self.setMemoryButton.clicked.connect(self.setMemory)
+        # 加入記憶體
+        self.addToMemoryButton.clicked.connect(self.addToMemory)
     
     def digitClicked(self):
         '''
@@ -238,11 +242,15 @@ class Dialog(QDialog, Ui_Dialog):
     
     def setMemory(self):
         '''設定記憶體鍵按下後的處理方法'''
-        pass
+        #pass
+        self.equalClicked()
+        self.sumInMemory = float(self.display.text())
     
     def addToMemory(self):
         '''放到記憶體鍵按下後的處理方法'''
-        pass
+        #pass
+        self.equalClicked()
+        self.sumInMemory += float(self.display.text())
     
     def createButton(self):
         ''' 建立按鍵處理方法, 以 Qt Designer 建立對話框時, 不需要此方法'''
